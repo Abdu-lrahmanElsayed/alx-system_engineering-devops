@@ -1,2 +1,2 @@
 #!/bin/bash
-file type School
+file type -m School
