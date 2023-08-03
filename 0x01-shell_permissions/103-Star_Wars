@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nano StarWars IV
+telnet towel.blinkenlights.nl
