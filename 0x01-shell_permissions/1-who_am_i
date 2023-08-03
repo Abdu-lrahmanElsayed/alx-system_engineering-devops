@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 sudo -l
+=======
+whoami
+>>>>>>> 3a7b2b64e4d55c9d0a3652e2f59207750943f384
