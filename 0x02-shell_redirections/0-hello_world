@@ -1,2 +1,2 @@
 #!/bin/bash
-sort < 0-hello_world \n“Hello, World”
+cat 0-hello_world \n“Hello, World”
