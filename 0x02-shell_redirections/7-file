@@ -1,2 +1,2 @@
 #!/bin/bash
-sort < Best School > $"\*\\'\"Best School\"\'\\*$\?\*\*\*\*\*:)"
+sort < Best School > $'\*\\\'"Best School"\\'\\*$\?\*\*\*\*\*:)'
