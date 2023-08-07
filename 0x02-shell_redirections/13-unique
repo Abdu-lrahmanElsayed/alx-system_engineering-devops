@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$@" | tr '[:upper:]' '[:lower:]' | sort | uniq -u 
+echo list | tr '[:upper:]' '[:lower:]' | sort | uniq -u 
