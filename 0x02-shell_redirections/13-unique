@@ -1,2 +1,2 @@
 #!/bin/bash
-echo list | tr '[:upper:]' '[:lower:]' | sort | uniq -u 
+sort | uniq -u 
