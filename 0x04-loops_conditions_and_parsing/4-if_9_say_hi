@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script is isplaying "Best School" 10 times using while loop and "hi" at 9th
+i=1
+while [ $i -le 10 ]; do
+	if [ $i -eq 9 ]; then
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
