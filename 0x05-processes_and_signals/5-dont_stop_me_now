@@ -3,4 +3,5 @@
 id=$(grep "bash ./4-to_infinity_and_beyond" -f)
 if [ -n "$id" ]; then
 	kill "$id"
+	echo "Terminated"
 fi
