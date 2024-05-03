@@ -5,3 +5,4 @@ if [ -n "$id" ]; then
 	kill -15 "$id"
 	echo "Terminated"
 fi
+
