@@ -14,6 +14,5 @@ if [ -e "school" ]; then
                 fi
 	fi
 else
-	echo "school file does not exist
-"
+	echo "school file does not exist"
 fi
