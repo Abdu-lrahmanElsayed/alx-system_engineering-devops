@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# This script do alot
+echo $$ > /var/run/myscript.pid
+sigterm()
+{
+	echo "I hate kill command"
+	rm_and_exit
+}
+sigint()
+{
+	echo "Y U no love me?!"
+	rm_and_exit
+}
+sigquit()
+{
+	rm_and_exit
+}
+trap 'sigterm' SIGTERM
+trap 'sigint' SIGINT
+trap 'sigquit' SIGQUIT
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
+rm_and_exit()
+{
+	rm -f /var/run/myscript.pid
+	exit 0
+}
