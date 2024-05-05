@@ -2,3 +2,4 @@
 # This script stops 4-to_infinity_and_beyond process.
 id=$(grep "bash ./4-to_infinity_and_beyond" -f)
 kill -STOP "$id"
+echo "Terminated"
