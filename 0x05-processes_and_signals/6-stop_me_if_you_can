@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # This script stops 4-to_infinity_and_beyond process.
 file="4-to_infinity_and_beyond"
-kill -STOP "$(pgrep "$file")"
-bg
-echo "Terminated"
+kill -TERM "$(pgrep "$file")"
