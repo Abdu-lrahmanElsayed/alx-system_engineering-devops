@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script stops 7-highlander process.
 file="7-highlander"
-kill "$(pgrep "$file")"
+kill -SIGKILL "$(pgrep "$file")"
 echo "Killed"
