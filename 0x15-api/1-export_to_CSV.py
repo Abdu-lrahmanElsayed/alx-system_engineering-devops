@@ -14,7 +14,7 @@ if __name__ == "__main__":
     url = baseurl + "/" + empid
 
     r = requests.get(url)
-    empname = r.json().get('name')
+    empuname = r.json().get('username')
     todourl = url + "/todos"
     r = requests.get(todourl)
     tasks = r.json()
@@ -22,4 +22,4 @@ if __name__ == "__main__":
     with open('{}.csv'.format(empid), 'w') as f:
         for task in tasks:
             f.write('"{}","{}","{}","{}"\n'.format(
-                empid, empname, task.get('completed'), task.get('title')))
+                empid, empuname, task.get('completed'), task.get('title')))
