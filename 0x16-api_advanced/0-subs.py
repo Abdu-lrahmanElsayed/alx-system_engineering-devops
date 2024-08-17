@@ -3,7 +3,7 @@
 queries the Reddit API
 and returns the number of subscribers for a given subreddit
 """
-import requests
+from requests import get
 
 
 def number_of_subscribers(subreddit):
@@ -15,7 +15,7 @@ def number_of_subscribers(subreddit):
     url = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
 
     try:
-        r = requests.get(url)
+        r = get(url)
         result = r.json()
         return result.get('data').get('subscribers')
     except Exception:
