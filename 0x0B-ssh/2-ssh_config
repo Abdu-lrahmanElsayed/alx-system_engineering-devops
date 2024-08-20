@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-Host 506023-web-01
-  HostName 35.174.211.156
-  User ubuntu
-  IdentityFile ./school
+Host *
+  IdentityFile ~/.ssh/school
   PasswordAuthentication no
 
